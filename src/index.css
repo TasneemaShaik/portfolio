@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App shell styles */
+:root {
+  --panel: #111827;
+}
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+.card {
+  @apply bg-[var(--panel)] border border-white/10 rounded-2xl p-5 shadow-soft;
+}
+.btn {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-white/10;
+}
+.btn-primary {
+  @apply bg-gradient-to-tr from-brand to-brand-2 text-gray-900 font-semibold border-transparent;
+}
+.badge {
+  @apply inline-block text-sm px-3 py-1 rounded-full border border-white/10 text-gray-300;
+}
+.section-title {
+  @apply text-2xl font-extrabold flex items-center gap-2 mb-4;
+}
+.section-title .dot {
+  @apply w-2.5 h-2.5 rounded-full;
+  background: linear-gradient(135deg, #60a5fa, #22d3ee);
+  box-shadow: 0 0 18px #60a5fa;
+}
+.nav-link {
+  @apply px-3 py-2 rounded-xl border border-transparent text-gray-300;
+}
+.nav-link-active {
+  @apply text-white border-white/10 bg-white/5;
+}
