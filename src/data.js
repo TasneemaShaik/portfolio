@@ -1,13 +1,13 @@
 export const NAV_ITEMS = ['Home','Education','Research','Extracurriculars','Volunteer','Awards & Certifications','Contact']
 
 export const SITE = {
-  owner: 'Tasneema Shaik',
-  email: 'you@example.com',
-  socials: [
-    { name: 'GitHub', url: 'https://github.com/yourname' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourname' },
-    { name: 'Twitter', url: 'https://twitter.com/yourname' },
-  ]
+    owner: 'Tasneema Shaik',
+    email: 'tasneema.0330@gmail.com',
+    socials: [
+        { name: 'GitHub', url: 'https://github.com/yourname' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tasneemashaik/' },
+        { name: 'Twitter', url: 'https://twitter.com/yourname' },
+    ]
 }
 
 export const hero = {

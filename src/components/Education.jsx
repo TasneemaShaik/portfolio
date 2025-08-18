@@ -14,12 +14,12 @@ function EducationCard({ degree, school, duration, description }) {
       initial={{ opacity: 0, y: 80 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-2xl shadow-lg p-8 border border-gray-700 max-w-xl mx-auto"
+      className="bg-gradient-to-r from-blue-100 to-blue-200 text-black rounded-2xl shadow-lg p-8 border border-gray-700 max-w-xl mx-auto"
     >
-      <h3 className="text-2xl font-bold text-blue-400">{degree}</h3>
-      <p className="text-gray-300 font-medium">{school}</p>
-      <p className="text-sm text-gray-400 mb-3">{duration}</p>
-      <p className="text-gray-300 leading-relaxed">{description}</p>
+      <h3 className="text-2xl font-bold text-black-400">{degree}</h3>
+      <p className="text-black-300 font-medium">{school}</p>
+      <p className="text-sm text-black-400 mb-3">{duration}</p>
+      <p className="text-black-300 leading-relaxed">{description}</p>
     </motion.div>
   );
 }

@@ -32,7 +32,7 @@ export default function App() {
     <div className="min-h-screen">
       <header className="top-0 z-50">
         <div className="container flex items-center justify-between py-3">
-          <a href="#" className="inline-flex items-center gap-2 font-extrabold text-white">
+          <a href="#" className="inline-flex items-center gap-2 font-extrabold">
             <span className="w-2.5 h-2.5 rounded-full" style={{background: 'linear-gradient(135deg,#60a5fa,#22d3ee)', boxShadow: '0 0 18px #60a5fa'}}></span>
             Tasneema Shaik
           </a>
