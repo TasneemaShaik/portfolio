@@ -1,59 +1,41 @@
-import { hero, SITE } from '../data.js'
+import { hero, SITE } from "../data.js";
 
 export default function Home() {
     return (
         <section
             id="home"
-            className="w-full min-h-screen flex items-center"
-            style={{ backgroundColor: "rgb(237, 249, 254)" }}
+            className="w-full min-h-screen flex flex-col gap-20 py-10"
+            style={{ backgroundColor: "#fcf9e6" }}
         >
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center px-4 sm:px-6 lg:px-8">
+            {hero.map((h, idx) => (
+                <div
+                    key={idx}
+                    className="container mx-auto grid grid-cols-1 gap-8 items-start px-4 sm:px-6 lg:px-8"
+                >
+                    {/* Left Content */}
+                    <div className="space-y-6 text-center lg:text-left">
+                        {/* Clickable Title */}
+                        <a
+                            href={h.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xl sm:text-2xl md:text-4xl font-extrabold text-blue-600 hover:text-accent transition-colors block"
+                        >
+                            {h.title}
+                        </a>
 
-                {/* Left Content */}
-                <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    {/* Small Intro */}
-                    <span className="text-accent tracking-wide text-sm uppercase block">
-                        {hero.title}
-                    </span>
+                        {/* Headline */}
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-600 leading-relaxed">
+                            {h.headline}
+                        </h2>
 
-                    {/* Headline */}
-                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-slate-900">
-                        {hero.headline}
-                        <span className="text-accent">.</span>
-                    </h1>
-
-                    {/* Subtext */}
-                    <p className="text-slate-600 max-w-xl mx-auto lg:mx-0">
-                        {hero.subtext}
-                    </p>
-
-                    {/* Social Links */}
-                    <div className="flex gap-3 pt-4 flex-wrap justify-center lg:justify-start">
-                        {SITE.socials.map((s) => (
-                            <a
-                                key={s.name}
-                                href={s.url}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="px-4 py-2 border border-accent text-accent rounded-lg hover:bg-accent/10 transition"
-                            >
-                                {s.name}
-                            </a>
-                        ))}
+                        {/* Subtext */}
+                        <p className="text-slate-600 text-base md:text-lg max-w-2xl mx-auto lg:mx-0 italic">
+                            {h.subtext}
+                        </p>
                     </div>
                 </div>
-
-                {/* Right Image */}
-                <div className="lg:col-span-5 flex justify-center lg:justify-end mt-8 lg:mt-0">
-                    <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-2xl border border-accent/40 bg-white shadow-md overflow-hidden">
-                        <img
-                            src={hero.image}
-                            alt="Hero"
-                            className="w-full h-full object-cover rounded-2xl opacity-95 hover:scale-105 transition duration-500"
-                        />
-                    </div>
-                </div>
-            </div>
+            ))}
         </section>
-    )
+    );
 }

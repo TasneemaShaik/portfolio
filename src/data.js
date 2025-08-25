@@ -4,40 +4,52 @@ export const SITE = {
     owner: 'Tasneema Shaik',
     email: 'tasneema.0330@gmail.com',
     socials: [
-        { name: 'GitHub', url: 'https://github.com/yourname' },
+        { name: 'GitHub', url: 'https://github.com/tasneema0330' },
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tasneemashaik/' },
-        { name: 'Twitter', url: 'https://twitter.com/yourname' },
-    ]
+    ],
+    resume: '/certificates/Tasneema_Shaik_Resume.pdf',
+    blog: '/certificates/Tasneema_Shaik_Resume.pdf'
 }
 
-export const hero = {
-  title: 'Frontend Developer',
-  headline: 'I build clean, fast and accessible web experiences.',
-  subtext: 'Specialized in HTML, CSS, JavaScript and modern tooling.',
-  image: '/assets/hero-placeholder.svg'
-}
-
-export const EDUCATION = [
-  {
-    degree: "Medicine",
-    school: "The Cleveland School of Science and Medicine – Senior",
-    duration: "2022 - 2026",
-    description: "Focused on Science & Medicine"
-  },
-  {
-    degree: "High School",
-    school: "XYZ Senior Secondary School",
-    duration: "2017 - 2019",
-    description: "Specialized in Physics, Chemistry, Mathematics with Computer Science."
-  },
-  {
-    degree: "Secondary School",
-    school: "LMN Public School",
-    duration: "2015 - 2017",
-    description: "Completed core foundation in science and mathematics."
-  }
+export const hero = [
+    {
+        title: "HighSchool Senior",
+        headline:
+            "Highly motivated and determined high school student, aspiring to become a physician. Equipped with the ability to network. Displays extensive experience in leadership activities. Possesses valuable networking, public speaking skills, and teamwork skills. Dedicated to creating a positive impact in the community.",
+        subtext: "Specialized in Clinical Exposure & Research.",
+    },
+    {
+        title:
+            "National Vice President, SADD National Student Leadership Council",
+        headline:
+            "Elected VP of National Student Leadership Council and SADD Board member, shaping national strategy",
+        subtext: "Specialized in Clinical Exposure & Research.",
+    }
 ];
 
+// data.js
+export const EDUCATION = [
+    {
+        degree: "High School Senior",
+        school: "The Cleveland School of Science and Medicine – Senior",
+        duration: "2022 - 2026",
+        description: "Focused on Science & Medicine",
+        gpaUnweighted: "4.0",
+        gpaWeighted: "4.651",
+        classRank: "#1",
+        subjects: [
+            { name: "AP Chemistry", score: "5" },
+            { name: "AP Environmental Science", score: "5" },
+            { name: "AP United States Government and Politics", score: "5" },
+            { name: "AP United States History", score: "5" },
+            { name: "AP Statistics", score: "5" },
+            { name: "AP Precalculus", score: "5" },
+            { name: "AP English Language and Composition", score: "4" },
+            { name: "AP Latin", score: "3" },
+            { name: "AP Computer Science Principles", score: "3" },
+        ],
+    },
+]
 
 export const RESEARCH = [
   {
@@ -197,18 +209,90 @@ export const VOLUNTEER = [
 ];
 
 export const AWARDS = {
-  academic: [
-    { title: "AP Scholar with Distinction", date: "July 2025", details: [] },
-    { title: "Harvard Book Prize", date: "May 2025", details: [] },
-  ],
-  sports: [
-    { title: "Martial Art Taekwondo – Blackbelt", date: "Sept 2023", details: [] },
-    { title: "USATT Women’s Finalist", date: "Aug 2022 - Present", details: ["U1200, U1300, U1400"] },
-  ],
-  misc: [
-    { title: "Special Congressional Recognition", date: "Jan 2024", details: [] },
-    { title: "First Place Debate Competition", date: "Nov 2023", details: [] },
-  ],
+    academic: [
+        {
+            title: "AP Scholar with Distinction Award",
+            date: "July 2025",
+            link: "/certificates/Awards/ap-awards.pdf", // 👈 link to image/pdf
+        },
+        {
+            title: "Global Seal of Biliteracy in Latin",
+            date: "May 2025",
+            link: "/certificates/ProfilrPhoto.jpg",
+        },
+        {
+            title: "Harvard Book Prize",
+            date: "May 2025",
+            link: "/certificates/Awards/harvard-book-prize.pdf",
+        },
+        {
+            title: "Mary Nazimek Award for Research Excellence – New Nereus Commentary",
+            date: "Jan 2024",
+            link: "/certificates/mary-nazimek.pdf",
+        },
+        {
+            title: "Top Researcher Protean Project Award - Latin Coding & Research",
+            date: "Jan 2024",
+            link: "/certificates/protean-project.pdf",
+        },
+        {
+            title: "Striving for Excellence Award",
+            date: "May 2023",
+            link: "/certificates/excellence-award.pdf",
+        },
+        {
+            title: "Excellence Award in Math, Science, Social Studies, Language Arts, Computer Science",
+            date: "May 2023",
+            link: "/certificates/multiple-excellence.pdf",
+        },
+        {
+            title: "Principal’s List Award & Lead by Example Award",
+            date: "April 2023",
+            link: "/certificates/principals-list.pdf",
+        },
+        {
+            title: "IBM Quantum Computing Course : Certificate of Completion",
+            date: "April 2023",
+            link: "/certificates/ibm-quantum.pdf",
+        },
+        {
+            title: "Top Ten NWEA Award for Geometry & Reading",
+            date: "Jan 2023",
+            link: "/certificates/nwea-award.pdf",
+        },
+    ],
+
+    sports: [
+        {
+            title: "Martial Art Taekwondo – Blackbelt",
+            date: "Sept 2023",
+            link: "/certificates/blackbelt.jpg",
+        },
+        {
+            title: "USATT Women’s Finalist – Ohio State Championship",
+            date: "Aug 2022 - Present",
+            link: "/certificates/usatt-finalist.pdf",
+            details: ["U1200", "U1300", "U1400"],
+        },
+    ],
+
+    misc: [
+        {
+            title: "Special Congressional Recognition – SADD CSSM Neighborhood Networking Event",
+            date: "Jan 2024",
+            link: "/certificates/congressional.pdf",
+        },
+        {
+            title: "First Place – Potomac Intramural High School Intermediate Division Debate Competition",
+            date: "Nov 2023",
+            link: "/certificates/Awards/potomac-debate.pdf",
+        },
+        {
+            title: "Entire Holy Quran Memorization & Certification",
+            date: "May 2022 - Present",
+            link: "/certificates/quran-certification.pdf",
+        },
+    ],
 };
 
 export const blogs = [

@@ -1,22 +1,51 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 
 export default function ResearchCard({ research, index }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
-      className="bg-gradient-to-r from-blue-100 to-blue-200 text-black rounded-2xl shadow-lg p-6 hover:shadow-2xl border border-gray-700"
-    >
-      <h3 className="text-xl font-bold text-black-400">{research.title}</h3>
-      <p className="text-black-300 font-medium">{research.role} � {research.organization}</p>
-      <p className="text-sm text-black-400 mb-3">{research.duration}</p>
-      <ul className="list-disc list-inside space-y-1">
-        {research.details.map((d, i) => (
-          <li key={i}>{d}</li>
-        ))}
-      </ul>
-    </motion.div>
-  );
+    return (
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
+            className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-300 
+                 transition-all duration-300 max-w-4xl mx-auto overflow-hidden"
+            style={{ backgroundColor: "#fcf9e6" }}
+        >
+            <div className="flex-1 w-full">
+                {/* Header bar (full width, touching borders) */}
+                <div className="bg-yellow-200 px-4 py-2">
+                    {/* First row → Title + Duration */}
+                    <div className="flex justify-between items-center gap-4">
+                        <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
+                            {research.title}
+                        </h3>
+                        <span className="text-sm md:text-base text-gray-700 dark:text-gray-300 whitespace-nowrap">
+                            {research.duration}
+                        </span>
+                    </div>
+
+                    {/* Second row → Role + Organization */}
+                    <div className="flex justify-between items-center mt-1">
+                        <p className="text-md font-medium text-gray-800 dark:text-gray-200">
+                            {research.role}
+                        </p>
+                        {research.organization && (
+                            <h5 className="text-md font-semibold text-gray-700 dark:text-gray-300">
+                                {research.organization}
+                            </h5>
+                        )}
+                    </div>
+                </div>
+
+                {/* Details */}
+                <div className="p-6">
+                    <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                        {research.details.map((d, i) => (
+                            <li key={i}>{d}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </motion.div>
+    );
 }
