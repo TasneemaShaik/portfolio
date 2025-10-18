@@ -13,7 +13,7 @@ export default function ResearchCard({ research, index }) {
         >
             <div className="flex-1 w-full">
                 {/* Header bar (full width, touching borders) */}
-                <div className="bg-blue-200 px-4 py-2">
+                <div className="bg-white-200 px-4 py-2">
                     {/* First row → Title + Duration */}
                     <div className="flex justify-between items-center gap-4">
                         <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
