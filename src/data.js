@@ -113,7 +113,13 @@ export const EXTRACURRICULARS = [
     details: [
       "Led the chapter by organizing meetings, recruiting members, managing social media, and presenting initiatives.",
       "Gained leadership, public speaking, event coordination, and collaboration skills through partnership building.",
-      "Earned the Presidential Volunteer Service Award for dedication to community service."
+      "Earned the Presidential Volunteer Service Award for dedication to community service.",
+      "My Journey with SADD"
+        {
+            title: "SADD CSSM Chapter Launch",
+            date: "Nov 2023",
+            link: "/sadd/SADDCSSMLanch.jpg", // 👈 link to image/pdf
+        },
     ]
   },
   {
