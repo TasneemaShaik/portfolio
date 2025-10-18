@@ -13,7 +13,7 @@ export const SITE = {
 
 export const hero = [
     {
-        title: "HighSchool Senior Class Topper2",
+        title: "HighSchool Senior",
         headline:
             "Highly motivated and determined high school student, aspiring to become a physician. Equipped with the ability to network. Displays extensive experience in leadership activities. Possesses valuable networking, public speaking skills, and teamwork skills. Dedicated to creating a positive impact in the community.",
         subtext: "Specialized in Clinical Exposure & Research.",
@@ -218,7 +218,7 @@ export const AWARDS = {
         {
             title: "Global Seal of Biliteracy in Latin",
             date: "May 2025",
-            link: "/certificates/ProfilrPhoto.jpg",
+             
         },
         {
             title: "Harvard Book Prize",
