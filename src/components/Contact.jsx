@@ -17,14 +17,13 @@ export default function Contact() {
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-blue-700">Contact Me</h2>
                     <p className="text-black-300 text-base mt-4 leading-relaxed">
-                        I am available on almost every social media. You can message me and I will reply within 24 hours.
-                        I can help you with <span className="font-semibold text-black-400">ML, AI, React, Android, Cloud, and Open Source Development</span>.
+                         <span className="font-semibold text-black-400">I am deeply passionate about hosting events and developing programs that make a positive impact in my local community, especially for teens. If you’d like to collaborate or share ideas for promoting community well-being, please contact me at tasneema.0330@gmail.com</span>.
                     </p>
 
                     {/* Social Icons */}
                     <div className="flex gap-6 mt-8 text-3xl">
                         {SITE.socials.filter(s =>
-                            ["github", "linkedin"].includes(s.name.toLowerCase())
+                            ["linkedin"].includes(s.name.toLowerCase())
                         ).map((s) => (
                             <a
                                 key={s.name}
@@ -33,7 +32,6 @@ export default function Contact() {
                                 rel="noopener noreferrer"
                                 className="hover:text-blue-400 transition"
                             >
-                                {s.name.toLowerCase() === "github" && <FaGithub />}
                                 {s.name.toLowerCase() === "linkedin" && <FaLinkedin />}
                             </a>
                         ))}
