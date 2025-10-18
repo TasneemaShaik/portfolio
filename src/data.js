@@ -4,7 +4,7 @@ export const SITE = {
     owner: 'Tasneema Shaik',
     email: 'tasneema.0330@gmail.com',
     socials: [
-        { name: 'GitHub', url: 'https://github.com/tasneema0330' },
+        { name: 'GitHub', url: 'https://github.com/tasneemashaik' },
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tasneemashaik/' },
     ],
     resume: '/certificates/Tasneema_Shaik_Resume.pdf',
@@ -13,7 +13,7 @@ export const SITE = {
 
 export const hero = [
     {
-        title: "HighSchool Senior Topper",
+        title: "HighSchool Senior Class Topper",
         headline:
             "Highly motivated and determined high school student, aspiring to become a physician. Equipped with the ability to network. Displays extensive experience in leadership activities. Possesses valuable networking, public speaking skills, and teamwork skills. Dedicated to creating a positive impact in the community.",
         subtext: "Specialized in Clinical Exposure & Research.",
