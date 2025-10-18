@@ -24,7 +24,7 @@ export default function EducationCard({
         >
             <div className="flex-1 w-full">
                 {/* Header bar */}
-                <div className="bg-blue-200 px-4 py-2">
+                <div className="bg-white-200 px-4 py-2">
                     {/* First row → Degree + Duration */}
                     <div className="flex justify-between items-center">
                         <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
