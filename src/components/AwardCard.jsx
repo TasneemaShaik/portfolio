@@ -16,7 +16,7 @@ export default function AwardCard({ title, date, details, link }) {
             </div>
 
             {/* Card */}
-            <div className="bg-gradient-to-r from-yellow-100 to-yellow-200 text-gray-900 rounded-lg shadow-lg p-6 ml-12 max-w-md hover:scale-105 transition-transform">
+            <div className="bg-gradient-to-r from-white-100 to-white-200 text-gray-900 rounded-lg shadow-lg p-6 ml-12 max-w-md hover:scale-105 transition-transform">
                 {link ? (
                     <a
                         href={`${import.meta.env.BASE_URL}${link}`}
