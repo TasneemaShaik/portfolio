@@ -13,7 +13,7 @@ export const SITE = {
 
 export const hero = [
     {
-        title: "HighSchool Senior Class Topper",
+        title: "HighSchool Senior Class Topper1",
         headline:
             "Highly motivated and determined high school student, aspiring to become a physician. Equipped with the ability to network. Displays extensive experience in leadership activities. Possesses valuable networking, public speaking skills, and teamwork skills. Dedicated to creating a positive impact in the community.",
         subtext: "Specialized in Clinical Exposure & Research.",

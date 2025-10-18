@@ -8,7 +8,7 @@ export default {
       colors: {
         brand: {
           DEFAULT: '#121d4a',
-          2: '#22d3ee'
+          2: '#121d4a'
         }
       },
       boxShadow: {
