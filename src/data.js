@@ -35,7 +35,7 @@ export const EDUCATION = [
         duration: "2022 - 2026",
         description: "Focused on Science & Medicine",
         gpaUnweighted: "4.0",
-        gpaWeighted: "4.651",
+        gpaWeighted: "4.688",
         classRank: "#1",
         subjects: [
             { name: "AP Chemistry", score: "5" },
