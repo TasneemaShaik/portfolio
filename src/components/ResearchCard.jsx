@@ -9,7 +9,7 @@ export default function ResearchCard({ research, index }) {
             transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
             className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-300 
                  transition-all duration-300 max-w-4xl mx-auto overflow-hidden"
-            style={{ backgroundColor: "#d8e4ed" }}
+            style={{ backgroundColor: "#e4edd8" }}
         >
             <div className="flex-1 w-full">
                 {/* Header bar (full width, touching borders) */}
