@@ -11,7 +11,7 @@ export default function VolunteerCard({ item, index }) {
             className="flex items-start bg-white dark:bg-neutral-900 
            rounded-2xl border border-gray-300 
            transition-all duration-300 max-w-4xl mx-auto overflow-hidden"
-            style={{ backgroundColor: "#fcf9e6" }}
+            style={{ backgroundColor: "#e4edd8" }}
         >
             <div className="flex-1 w-full">
                 {/* Header bar (full width, touching borders) */}

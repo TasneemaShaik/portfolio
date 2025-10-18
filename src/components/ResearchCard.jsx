@@ -9,11 +9,11 @@ export default function ResearchCard({ research, index }) {
             transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
             className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-300 
                  transition-all duration-300 max-w-4xl mx-auto overflow-hidden"
-            style={{ backgroundColor: "#fcf9e6" }}
+            style={{ backgroundColor: "#e4edd8" }}
         >
             <div className="flex-1 w-full">
                 {/* Header bar (full width, touching borders) */}
-                <div className="bg-yellow-200 px-4 py-2">
+                <div className="bg-bg-white-200 px-4 py-2">
                     {/* First row → Title + Duration */}
                     <div className="flex justify-between items-center gap-4">
                         <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
