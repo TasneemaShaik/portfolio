@@ -37,7 +37,7 @@ function EducationCard({
             </div>
 
             {/* Body Content */}
-            <div className="p-6" style={{ backgroundColor: "#a9c1d4" }}>
+            <div className="p-6" style={{ backgroundColor: "#d8e4ed" }}>
                 {description && (
                     <p className="text-gray-800 leading-relaxed mb-4">{description}</p>
                 )}

@@ -20,7 +20,7 @@ export default function EducationCard({
             className="flex items-start gap-6 bg-white dark:bg-neutral-900 
                  rounded-2xl shadow-md hover:shadow-xl transition-all 
                  duration-300 p-0 max-w-4xl mx-auto overflow-hidden"
-            style={{ backgroundColor: "#fcf9e6" }}
+            style={{ backgroundColor: "#e4edd8" }}
         >
             <div className="flex-1 w-full">
                 {/* Header bar */}
