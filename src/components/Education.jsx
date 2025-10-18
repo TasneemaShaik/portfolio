@@ -23,7 +23,7 @@ function EducationCard({
             initial={{ opacity: 0, y: 80 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="rounded-4xl shadow-lg border border-gray-300 bg-white overflow-hidden max-w-xl mx-auto"
+            className="rounded-2xl shadow-lg border border-gray-300 bg-white overflow-hidden max-w-full mx-auto"
         >
             {/* Header Bar (matches Volunteer pattern) */}
             <div className="bg-white-200 px-4 py-2">
