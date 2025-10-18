@@ -11,11 +11,11 @@ export default function ExtracurricularCard({ item, index }) {
             className="flex items-start gap-6 bg-white dark:bg-neutral-900 
            rounded-2xl border border-gray-300 
            transition-all duration-300 max-w-4xl mx-auto"
-            style={{ backgroundColor: "#fcf9e6" }}
+            style={{ backgroundColor: "#e4edd8" }}
         >
             <div className="flex-1 w-full">
                 {/* Header bar (full width, touching borders) */}
-                <div className="bg-yellow-200 rounded-t-2xl px-4 py-2">
+                <div className="bg-white-200 rounded-t-2xl px-4 py-2">
                     {/* First row → Title + Duration */}
                     <div className="flex justify-between items-center">
                         <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
