@@ -1,6 +1,7 @@
 ﻿import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { EDUCATION } from "../data";
+import { FaBolt, FaLink } from "react-icons/fa";
 
 function EducationCard({
     degree,
@@ -11,6 +12,7 @@ function EducationCard({
     gpaWeighted,
     classRank,
     subjects = [],
+    links = []
 }) {
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -26,7 +28,7 @@ function EducationCard({
             className="rounded-2xl shadow-lg border border-gray-300 bg-white overflow-hidden max-w-full max-h-full"
         >
             {/* Header Bar (matches Volunteer pattern) */}
-            <div className="bg-white-200 px-4 py-2">
+            <div className="px-4 py-2">
                 <div className="flex justify-between items-center">
                     <h3 className="text-lg md:text-xl font-bold text-gray-900">
                         {degree}
@@ -72,6 +74,29 @@ function EducationCard({
                                 <li key={idx}>
                                     {subj.name}:{" "}
                                     <span className="font-semibold">{subj.score}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
+                {/* Links Section (only show if links exist) */}
+                {links && links.length > 0 && (
+                    <div className="mt-4 border-t border-gray-300 pt-3">
+                        <h4 className="text-md font-semibold text-gray-800 flex items-center gap-2">
+                            <FaLink className="text-blue-500" /> Related Links
+                        </h4>
+                        <ul className="mt-2 space-y-2">
+                            {links.map((link, i) => (
+                                <li key={i}>
+                                    <a
+                                        href={`${import.meta.env.BASE_URL}${link.url}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-600 hover:underline hover:text-blue-800"
+                                    >
+                                        {link.label}
+                                    </a>
                                 </li>
                             ))}
                         </ul>

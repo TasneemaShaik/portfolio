@@ -1,4 +1,5 @@
 ﻿import { motion } from "framer-motion";
+import { FaBolt, FaLink } from "react-icons/fa";
 
 export default function ResearchCard({ research, index }) {
     return (
@@ -7,13 +8,13 @@ export default function ResearchCard({ research, index }) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
-            className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-300 
-                 transition-all duration-300 max-w-4xl mx-auto overflow-hidden"
-            style={{ backgroundColor: "#e4edd8" }}
+            className="flex items-start gap-6 bg-white rounded-2xl border border-gray-300 
+        transition-all duration-300 max-w-4xl mx-auto"
+            style={{ /*backgroundColor: "#e4edd8" */}}
         >
             <div className="flex-1 w-full">
                 {/* Header bar (full width, touching borders) */}
-                <div className="bg-white-200 px-4 py-2">
+                <div className="px-4 py-2">
                     {/* First row → Title + Duration */}
                     <div className="flex justify-between items-center gap-4">
                         <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
@@ -38,12 +39,38 @@ export default function ResearchCard({ research, index }) {
                 </div>
 
                 {/* Details */}
-                <div className="p-6">
-                    <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                <div className="p-6" style={{ backgroundColor: "#d8e4ed" }}>
+                    <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                         {research.details.map((d, i) => (
-                            <li key={i}>{d}</li>
+                            <li key={i} className="flex items-start gap-2">
+                                <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />
+                                <span>{d}</span>
+                            </li>
                         ))}
                     </ul>
+
+                    {/* Links Section (only show if links exist) */}
+                    {research.links && research.links.length > 0 && (
+                        <div className="mt-4 border-t border-gray-300 pt-3">
+                            <h4 className="text-md font-semibold text-gray-800 flex items-center gap-2">
+                                <FaLink className="text-blue-500" /> Related Links
+                            </h4>
+                            <ul className="mt-2 space-y-2">
+                                {research.links.map((link, i) => (
+                                    <li key={i}>
+                                        <a
+                                            href={`${import.meta.env.BASE_URL}${link.url}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-blue-600 hover:underline hover:text-blue-800"
+                                        >
+                                            {link.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                     )}
                 </div>
             </div>
         </motion.div>

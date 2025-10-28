@@ -17,6 +17,7 @@ export const hero = [
         headline:
             "Highly motivated and determined high school student, aspiring to become a physician. Equipped with the ability to network. Displays extensive experience in leadership activities. Possesses valuable networking, public speaking skills, and teamwork skills. Dedicated to creating a positive impact in the community.",
         subtext: "Specialized in Clinical Exposure & Research.",
+        image: "/certificates/Home/Quantum_certificate.png"
     },
     {
         title:
@@ -48,6 +49,10 @@ export const EDUCATION = [
             { name: "AP Latin", score: "3" },
             { name: "AP Computer Science Principles", score: "3" },
         ],
+        links: [
+            { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+            { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
+        ]
     },
 ]
 
@@ -60,6 +65,10 @@ export const RESEARCH = [
     details: [
       "Completed 300+ hours of research on EGF response in lung cancer cells via EGFR signaling analysis using Western Blots.",
       "Gained a strong sense of cell signaling pathways and hands-on experience with protein analysis techniques."
+        ],
+    links: [
+        { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
     ]
   },
   {
@@ -115,6 +124,10 @@ export const EXTRACURRICULARS = [
       "Gained leadership, public speaking, event coordination, and collaboration skills through partnership building.",
       "Earned the Presidential Volunteer Service Award for dedication to community service.",
       "My Journey with SADD",
+      ],
+    links: [
+        { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
     ]
   },
   {
@@ -187,6 +200,10 @@ export const VOLUNTEER = [
     duration: "Jan 2025 – Present",
     details: [
       "Providing volunteer SAT tutoring in live sessions to support equitable access and improve student outcome."
+    ],
+    links: [
+        { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
     ]
   },
   {
@@ -215,6 +232,10 @@ export const AWARDS = {
             title: "AP Scholar with Distinction Award",
             date: "July 2025",
             link: "/certificates/Awards/ap-awards.pdf", // 👈 link to image/pdf
+            links: [
+                { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+                { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
+            ]
         },
         {
             title: "Global Seal of Biliteracy in Latin",
