@@ -25,6 +25,7 @@ export const hero = [
         headline:
             "Elected VP of National Student Leadership Council and SADD Board member, shaping national strategy",
         subtext: "Specialized in Clinical Exposure & Research.",
+        image: "/certificates/Home/Quantum_certificate.png"
     }
 ];
 
@@ -52,7 +53,8 @@ export const EDUCATION = [
         links: [
             { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
             { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
-        ]
+        ],
+        image: "/certificates/Home/Quantum_certificate.png"
     },
 ]
 
@@ -68,8 +70,10 @@ export const RESEARCH = [
         ],
     links: [
         { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
-    ]
+        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   },
   {
     title: "Scientific Enrichment Opportunity (SEO)/Youth Engaged in Science (YES) Program",
@@ -80,7 +84,10 @@ export const RESEARCH = [
       "Completed 600+ hours of research over two consecutive summers, investigating the effects of G350D and R710G mutations on dynamin-related protein 1 (DRP1).",
       "Authored two in-depth scientific manuscripts and enhanced skills in writing, data analysis, and critical thinking.",
       "Presented research findings to audiences of 200+ attendees each year; received the Mark Smith Prize for Outstanding Scientific Presentation (2023) and delivered an award-winning presentation in 2024."
-    ]
+      ],
+      links: [
+          { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+      ],
   },
   {
     title: "Brainstormers Club",
@@ -89,7 +96,8 @@ export const RESEARCH = [
     role: "Member",
     details: [
       "Participated in Neurosurgeons seminars to learn topics that doctors have to implement in their daily job."
-    ]
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   },
   {
     title: "Horizons Medical Mentoring Program",
@@ -112,7 +120,8 @@ export const EXTRACURRICULARS = [
       "Collaborated with student leaders nationwide to plan & lead initiatives on youth safety, mental health, and advocacy.",
       "Elected VP of National Student Leadership Council and SADD Board member, shaping national strategy.",
       "Developed leadership, public speaking, and planning skills through student-led national impactful programs."
-    ]
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   },
   {
     title: "SADD Chapter at the Cleveland School of Science and Medicine (CSSM)",
@@ -127,8 +136,10 @@ export const EXTRACURRICULARS = [
       ],
     links: [
         { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
-    ]
+        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   },
   {
     title: "Health Professional Pipeline Program (H3P)",
@@ -138,7 +149,10 @@ export const EXTRACURRICULARS = [
     details: [
       "Manage four committees overseeing community initiatives and help lead meetings and special programs.",
       "Learned valuable skills in communication and team management while organizing community events."
-    ]
+    ],
+    links: [
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+    ],
   },
   {
     title: "OH-11 Youth Advisory Council",
@@ -203,8 +217,10 @@ export const VOLUNTEER = [
     ],
     links: [
         { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" }
-    ]
+        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   },
   {
     title: "National Honor Society",
@@ -213,7 +229,10 @@ export const VOLUNTEER = [
     duration: "Oct 2023 – Present",
     details: [
       "Contributing to events and service projects, including care baskets for cancer patients and induction ceremony setup."
-    ]
+    ],
+    links: [
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+    ],
   },
   {
     title: "World Champion Taekwondo Academy",
@@ -222,7 +241,8 @@ export const VOLUNTEER = [
     duration: "August 2022 – Present",
     details: [
       "Volunteered for several months as a student trainer alongside the lead instructor, and earned the Presidential Volunteer Service Award."
-    ]
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   }
 ];
 
