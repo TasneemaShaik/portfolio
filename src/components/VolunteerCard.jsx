@@ -170,13 +170,21 @@ export default function VolunteerCard({ item, index }) {
                         <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6">
                             <div className="w-full md:w-1/2 flex justify-center">
                                 <div className="relative pb-[56.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
-                                    <iframe
-                                        src={videoLink.url}
-                                        title={videoLink.label}
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        className="absolute top-0 left-0 w-full h-full rounded-xl"
-                                    ></iframe>
+                                    {videoLink.videotype === "youtube" ? (
+                                        <iframe
+                                            src={videoLink.url}
+                                            title={videoLink.label}
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                            className="absolute top-0 left-0 w-full h-full rounded-xl"
+                                        />
+                                    ) : (
+                                        <video
+                                            src={`${import.meta.env.BASE_URL}${videoLink.url}`}
+                                            controls
+                                            className="absolute top-0 left-0 w-full h-full object-contain rounded-xl"
+                                        />
+                                    )}
                                 </div>
                             </div>
 
@@ -234,13 +242,21 @@ export default function VolunteerCard({ item, index }) {
                         {/* Left-aligned video */}
                         <div className="mt-6 flex justify-start">
                             <div className="relative pb-[29.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
-                                <iframe
-                                    src={videoLink.url}
-                                    title={videoLink.label}
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    className="absolute top-0 left-0 w-full h-full rounded-xl"
-                                ></iframe>
+                                {videoLink.videotype === "youtube" ? (
+                                    <iframe
+                                        src={videoLink.url}
+                                        title={videoLink.label}
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        className="absolute top-0 left-0 w-full h-full rounded-xl"
+                                    />
+                                ) : (
+                                    <video
+                                        src={`${import.meta.env.BASE_URL}${videoLink.url}`}
+                                        controls
+                                        className="absolute top-0 left-0 w-full h-full object-contain rounded-xl"
+                                    />
+                                )}
                             </div>
                         </div>
                     </>

@@ -71,7 +71,7 @@ export const RESEARCH = [
     links: [
         { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
         { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
     ],
     image: "/certificates/Home/Quantum_certificate.png"
   },
@@ -86,7 +86,7 @@ export const RESEARCH = [
       "Presented research findings to audiences of 200+ attendees each year; received the Mark Smith Prize for Outstanding Scientific Presentation (2023) and delivered an award-winning presentation in 2024."
       ],
       links: [
-          { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+          { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
       ],
   },
   {
@@ -106,7 +106,11 @@ export const RESEARCH = [
     role: "Member",
     details: [
       "Gained foundational knowledge in human anatomy, bleeding control, and basic suturing through case studies and hands-on activities."
-    ]
+    ],
+    links: [
+        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
+    ],
+    image: "/certificates/Home/Quantum_certificate.png"
   }
 ];
 
@@ -135,9 +139,9 @@ export const EXTRACURRICULARS = [
       "My Journey with SADD",
       ],
     links: [
-        { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+        { label: "Certificate", url: "certificates/Awards/ap-awards.pdf" },
+        { label: "Event Photo", url: "certificates/Awards/ap-awards.pdf" },
+        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
     ],
     image: "/certificates/Home/Quantum_certificate.png"
   },
@@ -151,8 +155,9 @@ export const EXTRACURRICULARS = [
       "Learned valuable skills in communication and team management while organizing community events."
     ],
     links: [
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
     ],
+    image: "/certificates/Home/Quantum_certificate.png"
   },
   {
     title: "OH-11 Youth Advisory Council",
@@ -162,7 +167,10 @@ export const EXTRACURRICULARS = [
     details: [
       "Collaborated with peers and local leaders in OH-11 to address community issues and propose actionable solutions.",
       "Engaged with policymakers to deepen understanding of federal legislative processes and advocacy strategies."
-    ]
+    ],
+    links: [
+        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
+    ],
   },
   {
     title: "Ohio Department of Health (ODH) Teen Wellness Team",
@@ -218,7 +226,7 @@ export const VOLUNTEER = [
     links: [
         { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
         { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
     ],
     image: "/certificates/Home/Quantum_certificate.png"
   },
@@ -231,7 +239,7 @@ export const VOLUNTEER = [
       "Contributing to events and service projects, including care baskets for cancer patients and induction ceremony setup."
     ],
     links: [
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video" }
+        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
     ],
   },
   {

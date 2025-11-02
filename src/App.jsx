@@ -7,7 +7,6 @@ import Extracurricular from './components/Extracurricular.jsx';
 import Volunteer from './components/Volunteer.jsx';
 import Awards from './components/Awards.jsx';
 import Education from './components/Education.jsx';
-import Blogs from './components/Blogs.jsx';
 import Contact from './components/Contact.jsx';
 import { NAV_ITEMS } from './data.js';
 
@@ -19,7 +18,6 @@ const sections = {
   'Extracurriculars': Extracurricular,
   'Volunteer': Volunteer,
   'Awards & Certifications': Awards,
-  'Blogs': Blogs,
   'Contact': Contact
 };
 
