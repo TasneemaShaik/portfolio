@@ -8,7 +8,7 @@ export const SITE = {
         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tasneemashaik/' },
     ],
     resume: '/certificates/Tasneema_Shaik_Resume.pdf',
-    blog: '/certificates/Tasneema_Shaik_Resume.pdf'
+    profile: '/certificates/stethoscope.jpg'
 }
 
 export const hero = [
