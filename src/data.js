@@ -70,15 +70,9 @@ export const RESEARCH = [
     details: [
 "During the RISE Program at Cleveland Clinic’s Lerner Research Institute, I spent 300+ hours researching EGF response in lung cancer cells via EGFR signaling. I gained hands-on experience with Western blotting, analyzed protein expression, and presented my findings to 50+ faculty and students, strengthening both my scientific and communication skills. This experience deepened my understanding of translational research and showed how laboratory discoveries can directly impact cancer treatment."        ],
     links: [
-<<<<<<< HEAD
-        { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
-=======
        // { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
        // { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
         { label: "My Poster Presentation - 2025", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
->>>>>>> f31f38b (all new changes)
     ],
     image: "/research/rise/rise.jpg"
   },
@@ -90,13 +84,9 @@ export const RESEARCH = [
     details: [
      "Over two summers at Case Western Reserve University’s SEO/YES Program, I completed 600+ hours of research investigating how the G350D and R710G mutations affect DRP1 protein function, focusing on protein assembly and enzymatic activity. I conducted experiments using GTPase assays and electron microscopy, analyzed complex data, and explored connections between these molecular mechanisms and potential patient outcomes. I authored two detailed scientific manuscripts, presented my findings to 200+ attendees, and earned the Mark Smith Prize for Outstanding Scientific Presentation (2023) and Outstanding Poster Presentation (2024). This experience strengthened my laboratory, analytical, and scientific communication skills while deepening my understanding of translational biomedical research." ],
       links: [
-<<<<<<< HEAD
-          { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
-=======
         { label: "ResearchManuscript_2024", url: "/research/seoyes/Shaik_ResearchManuscript_2024.pdf" },
         { label: "ResearchManuscript_2023", url: "/research/seoyes/Shaik_ResearchManuscript_2023.pdf" },
         { label: "My Poster Presentation ", url: "/research/seoyes/PosterPresentation.mp4", type: "video" , videotype: "other" }
->>>>>>> f31f38b (all new changes)
       ],
     image: "/research/seoyes/award.png"
   },
@@ -116,21 +106,12 @@ export const RESEARCH = [
     organization: "Cleveland School of Science and Medicine",
     role: "Member",
     details: [
-<<<<<<< HEAD
-      "Gained foundational knowledge in human anatomy, bleeding control, and basic suturing through case studies and hands-on activities."
-    ],
-    links: [
-        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
-    ],
-    image: "/certificates/Home/Quantum_certificate.png"
-=======
      
     "From August 2022 to August 2023, I participated in the Horizons Medical Mentoring Program at Case Western Reserve University, where I gained hands-on exposure to foundational clinical skills. Guided by mentors, I practiced human anatomy, bleeding control, and basic suturing, building both confidence and precision through repeated practice. Beyond learning technical skills, I gained insight into the daily responsibilities of healthcare professionals, including the importance of patient safety, professionalism, and critical thinking. This experience not only strengthened my practical abilities but also fueled my passion for medicine and solidified my commitment to pursuing a career in healthcare."],
      links: [
       //  { label: "My Journey with internship", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
     ],
     //image: "/certificates/Home/Quantum_certificate.png"
->>>>>>> f31f38b (all new changes)
   }
 ];
 
@@ -159,17 +140,11 @@ export const EXTRACURRICULARS = [
       
     "As a SADD Chapter Leader, I had the opportunity to grow our chapter from the ground up, recruiting 35 members, expanding to two additional schools, and building partnerships with seven local prevention organizations, including hospitals. I created public health style outreach campaigns and managed social media platforms that reached over 1,000 students, while raising $2,000 by winning a national video challenge on alcohol awareness and using the funds to expand our programs and outreach. Sharing our initiatives at statewide and national SADD events allowed me to connect with other student leaders and showcase our work, and I was honored to receive the President’s Volunteer Service Award for my dedication to teen wellness. Through planning schoolwide projects such as the Distract-O-Trac Project and Red Ribbon Week, I developed strong leadership, event coordination, and networking skills, while inspiring meaningful engagement and positive change in my school community."],
     links: [
-<<<<<<< HEAD
-        { label: "Certificate", url: "certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "certificates/Awards/ap-awards.pdf" },
-        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
-=======
         { label: "Neighborhood Networking Event", url: "/sadd/sadd2.png" },
         { label: "Impaired Driving Awareness Session", url: "/sadd/sadd3.png" },
         { label: "Ford Driver Safety Event", url: "/sadd/sadd3.1.png" },
         { url: "/sadd/sadd1.mp4", type: "video" , videotype: "other" ,label: "SADD CSSM Chapter Raising Awareness for Distracted Driving "},
     //    { label: "SADD CSSM NIAAA Video Award ", url: "https://www.youtube.com/watch?v=qImT4i7jX5Y", type: "video" , videotype: "youtube" }
->>>>>>> f31f38b (all new changes)
     ],
     image: "/sadd/sadd1.png"
     
@@ -183,15 +158,9 @@ export const EXTRACURRICULARS = [
     "Since September 2022, I have served as Vice President and active member of the Health Profession Pipeline Program (H3P), where I lead meetings for more than 80 members and oversee four committees that plan educational and service events. I gained hands-on medical experience by working with medical students on mock patient interviews and clinical exercises, which gave me an early understanding of patient care. I also organized a school blood drive in partnership with the American Red Cross, collecting 50 units of blood, well above our goal of 30, and coordinated service projects such as making blankets for children at local hospitals. These experiences have helped me grow as a leader, strengthened my skills in event planning and organization, and allowed me to contribute meaningfully to the health and well-being of my community."
     ],
     links: [
-<<<<<<< HEAD
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
-    ],
-    image: "/certificates/Home/Quantum_certificate.png"
-=======
        // { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
     ],
     image: "/h3p/blooddrivecamp.png"
->>>>>>> f31f38b (all new changes)
   },
   {
     title: "Beyond Bars Initiative (BBI)",
@@ -199,14 +168,6 @@ export const EXTRACURRICULARS = [
     organization: "OH-11 Youth Advisory Council",
     duration: "Oct 2024 – Present",
     details: [
-<<<<<<< HEAD
-      "Collaborated with peers and local leaders in OH-11 to address community issues and propose actionable solutions.",
-      "Engaged with policymakers to deepen understanding of federal legislative processes and advocacy strategies."
-    ],
-    links: [
-        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
-    ],
-=======
     "I was selected through a highly competitive process to serve a one-year term on Congresswoman Shontel Brown’s Youth Advisory Council, where I provide input on youth-focused initiatives and policy. Working alongside peers and community stakeholders, I researched Cleveland’s criminal justice system and developed an 18-page capstone plan with actionable reform strategies, which led to the launch of the Beyond Bars Initiative (BBI) to support individuals reentering society after incarceration. I also collaborate with Case Western Reserve University School of Medicine’s HOPE4 initiative to lead visits to the Juvenile Justice Center, assess youth needs, and implement targeted toolkits that promote community wellness. Through this work, I have gained a deeper understanding of advocacy, empathy, and the social factors affecting vulnerable populations, while strengthening my leadership, project management, and community engagement skills." 
     ],
         links: [
@@ -216,7 +177,6 @@ export const EXTRACURRICULARS = [
     ],
     image: "/bbi/bbi.png"
     
->>>>>>> f31f38b (all new changes)
   },
   {
     title: "Ohio Department of Health (ODH) Teen Wellness Team",
@@ -268,15 +228,9 @@ export const VOLUNTEER = [
     details: [
       "I volunteer as an SAT tutor at Schoolhouse, where I provide personalized guidance in reading, writing, and math. I work closely with students to build test-taking strategies, create tailored practice materials, and track their progress, all while encouraging confidence and a growth mindset. Through this role, I have the opportunity to make a meaningful impact on students’ academic success while sharpening my own teaching, leadership, and communication skills."],
     links: [
-<<<<<<< HEAD
-        { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
-        { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
-=======
         { label: "Certificate", url: "/certificates/Awards/schoolhouse.png" },
       //  { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
        // { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
->>>>>>> f31f38b (all new changes)
     ],
     image: "/certificates/Awards/schoolhouse.png"
   },
@@ -288,11 +242,7 @@ export const VOLUNTEER = [
     details: [
      "I am a proud member of the National Honor Society (NHS), an organization that recognizes students for their academic achievement, leadership, service, and character. Through NHS, I actively participate in community service projects and school initiatives, striving to make a positive impact while embodying values such as integrity, responsibility, and scholarship. Being part of NHS reflects my commitment to personal growth, academic excellence, and contributing meaningfully to my school and community." ],
     links: [
-<<<<<<< HEAD
-        { label: "My Journey with SADD", url: "videos/IMG_1276.mp4", type: "video", videotype: "other" }
-=======
    //     { label: "My Journey with internship", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
->>>>>>> f31f38b (all new changes)
     ],
     image: "/certificates/Awards/nhs-1.png"
   },
