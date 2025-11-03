@@ -170,11 +170,7 @@ export default function VolunteerCard({ item, index }) {
                         <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6">
                             <div className="w-full md:w-1/2 flex justify-center">
                                 <div className="relative pb-[56.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
-<<<<<<< HEAD
-                                    {videoLink.videotype === "youtube" ? (
-=======
                                       {videoLink.videotype === "youtube" ? (
->>>>>>> f31f38b (all new changes)
                                         <iframe
                                             src={videoLink.url}
                                             title={videoLink.label}
