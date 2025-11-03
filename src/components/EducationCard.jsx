@@ -5,6 +5,7 @@ export default function EducationCard({
     school,
     duration,
     description,
+    NationalMerit,
     gpaUnweighted,
     gpaWeighted,
     classRank,
@@ -54,6 +55,11 @@ export default function EducationCard({
 
                     {/* GPA + Rank */}
                     <div className="mb-4 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                        {NationalMerit && (
+                            <p>
+                                <span className="font-semibold">National Merit Semi-finalist:</span> {NationalMerit}
+                            </p>
+                        )}
                         {gpaUnweighted && (
                             <p>
                                 <span className="font-semibold">Unweighted GPA:</span> {gpaUnweighted}

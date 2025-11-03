@@ -238,7 +238,7 @@ export default function ResearchCard({ research, index }) {
                             </div>
                         )}
 
-                        <div className="mt-6 flex justify-start">
+                       <div className="mt-6 flex justify-start">
                             <div className="relative pb-[29.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
                                 {videoLink.videotype === "youtube" ? (
                                     <iframe

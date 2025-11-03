@@ -58,23 +58,23 @@ export default function Contact() {
                     className="flex flex-col items-center text-center max-w-md"
                 >
                     <img
-                        src="/path/to/profile.png"
+                        src="/certificates/Home/stethoscope.png"
                         alt="Profile"
                         className="w-40 h-40 rounded-full border-4 border-blue-400 shadow-md hover:scale-105 transition"
                     />
-                    <h2 className="text-3xl md:text-4xl font-semibold mt-6 text-blue-700">Blogs</h2>
+      {/*               <h2 className="text-3xl md:text-4xl font-semibold mt-6 text-blue-700">Blogs</h2>
                     <p className="text-black-300 text-base mt-4 leading-relaxed">
                         I like to document some of my experiences in my professional career journey
                         as well as share technical knowledge.
                     </p>
-                    <a
+                  <a
                         href={`${import.meta.env.BASE_URL}${SITE.blog}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition transform hover:scale-105"
                     >
-                        Visit My Blogsite
-                    </a>
+                       Visit My Blogsite
+                    </a>*/}
                 </motion.div>
             </section>
         </div>

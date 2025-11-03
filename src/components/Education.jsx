@@ -7,6 +7,7 @@ function EducationCard({
     school,
     duration,
     description,
+    NationalMerit,
     gpaUnweighted,
     gpaWeighted,
     classRank,
@@ -52,9 +53,17 @@ function EducationCard({
                 )}
 
                 {/* GPA + RANK INFO */}
-                {(gpaUnweighted || gpaWeighted || classRank) && (
+                {(NationalMerit || gpaUnweighted || gpaWeighted || classRank) && (
                     <div className="bg-[#d8e4ed] rounded-xl p-4 mb-4">
                         <ul className="space-y-2 text-gray-800">
+                            {NationalMerit && (
+                                <li className="flex items-start gap-2">
+                                    <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />
+                                    <span>
+                                        <strong>National Merit Semi-Finalist:</strong> {NationalMerit}
+                                    </span>
+                                </li>
+                            )}
                             {gpaUnweighted && (
                                 <li className="flex items-start gap-2">
                                     <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />

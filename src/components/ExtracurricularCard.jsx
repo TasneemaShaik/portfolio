@@ -168,7 +168,7 @@ export default function ExtracurricularCard({ item, index }) {
                         )}
 
                         {/* Side-by-side layout */}
-                        <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6">
+                          <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6">
                             <div className="w-full md:w-1/2 flex justify-center">
                                 <div className="relative pb-[56.56%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
                                     {videoLink.videotype === "youtube" ? (
@@ -243,7 +243,11 @@ export default function ExtracurricularCard({ item, index }) {
                         {/* Left-aligned video */}
                         <div className="mt-6 flex justify-start">
                             <div className="relative pb-[29.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
+<<<<<<< HEAD
                                 {videoLink.videotype === "youtube" ? (
+=======
+                                 {videoLink.videotype === "youtube" ? (
+>>>>>>> f31f38b (all new changes)
                                     <iframe
                                         src={videoLink.url}
                                         title={videoLink.label}
