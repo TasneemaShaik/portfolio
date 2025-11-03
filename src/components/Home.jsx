@@ -27,7 +27,7 @@ export default function Home() {
                                         src={`${import.meta.env.BASE_URL}${h.image
                                             }`}
                                         alt="Profile"
-                                        className={`w-100 h-100 md:w-100 md:h-85 object-contain rounded-md shadow-lg border-4 border-white ${isEven
+                                        className={`w-100 h-90 md:w-50 md:h-81 object-contain rounded-md shadow-md border-0 border-white ${isEven
                                                 ? "transform rotate-[-2deg]"
                                                 : "transform rotate-[2deg]"
                                             }`}

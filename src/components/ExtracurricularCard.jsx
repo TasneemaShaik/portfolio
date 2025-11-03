@@ -121,7 +121,7 @@ export default function ExtracurricularCard({ item, index }) {
                             <img
                                 src={`${import.meta.env.BASE_URL}${item.image}`}
                                 alt={item.title}
-                                className="rounded-xl shadow-md max-h-[250px] object-contain"
+                                className="rounded-xl shadow-md max-h-[400px] object-contain"
                             />
                         </div>
                     </div>
@@ -193,7 +193,7 @@ export default function ExtracurricularCard({ item, index }) {
                                 <img
                                     src={`${import.meta.env.BASE_URL}${item.image}`}
                                     alt={item.title}
-                                    className="rounded-xl shadow-md max-h-[250px] object-contain"
+                                    className="rounded-xl shadow-md max-h-[400px] object-contain"
                                 />
                             </div>
                         </div>

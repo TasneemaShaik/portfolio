@@ -3,7 +3,7 @@ import { RESEARCH } from "../data.js";
 
 export default function Research() {
   return (
-    <div className="py-12 space-y-20">
+    <div className="py-10 space-y-20">
       {RESEARCH.map((item, index) => (
         <ResearchCard key={index} research={item} />
       ))}

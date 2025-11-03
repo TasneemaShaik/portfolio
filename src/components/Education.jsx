@@ -137,11 +137,11 @@ function EducationCard({
 
             {/* RIGHT IMAGE */}
             {image && (
-                <div className="md:w-1/3 w-full bg-gray-50 flex justify-center items-center p-4 border-l border-gray-200">
+                <div className="md:w-1/2 w-full bg-gray-50 flex justify-center items-center p-4 border-l border-gray-200">
                     <img
                         src={`${import.meta.env.BASE_URL}${image}`}
                         alt={degree}
-                        className="rounded-xl shadow-md w-full h-auto object-contain max-h-[220px] md:max-h-[260px]"
+                        className="rounded-xl shadow-xl w-full h-auto object-contain max-h-[900px] md:max-h-[900px]"
                     />
                 </div>
             )}

@@ -120,7 +120,7 @@ export default function ResearchCard({ research, index }) {
                             <img
                                 src={`${import.meta.env.BASE_URL}${research.image}`}
                                 alt={research.title}
-                                className="rounded-xl shadow-md max-h-[250px] object-contain"
+                                className="rounded-xl shadow-md max-h-[400px] object-contain"
                             />
                         </div>
                     </div>
@@ -166,9 +166,9 @@ export default function ResearchCard({ research, index }) {
                             </div>
                         )}
 
-                        <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-6">
-                            <div className="w-full md:w-1/2 flex justify-center">
-                                <div className="relative pb-[56.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
+                        <div className="mt-1/3 flex flex-col md:flex-row items-center justify-center gap-1">
+                            <div className="w-full md:w-1/2">
+                                <div className="relative pb-[80.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
                                     {videoLink.videotype === "youtube" ? (
                                         <iframe
                                             src={videoLink.url}
@@ -191,7 +191,7 @@ export default function ResearchCard({ research, index }) {
                                 <img
                                     src={`${import.meta.env.BASE_URL}${research.image}`}
                                     alt={research.title}
-                                    className="rounded-xl shadow-md max-h-[250px] object-contain"
+                                    className="rounded-xl shadow-md max-h-[400px] object-contain"
                                 />
                             </div>
                         </div>
