@@ -243,11 +243,7 @@ export default function ExtracurricularCard({ item, index }) {
                         {/* Left-aligned video */}
                         <div className="mt-6 flex justify-start">
                             <div className="relative pb-[29.25%] w-full max-w-md h-0 overflow-hidden rounded-xl shadow-md">
-<<<<<<< HEAD
-                                {videoLink.videotype === "youtube" ? (
-=======
                                  {videoLink.videotype === "youtube" ? (
->>>>>>> f31f38b (all new changes)
                                     <iframe
                                         src={videoLink.url}
                                         title={videoLink.label}
