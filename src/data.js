@@ -126,7 +126,8 @@ export const EXTRACURRICULARS = [
     "I serve as National Vice President of Students Against Destructive Decisions (SADD), a role I was appointed to following a highly competitive national evaluation. I work closely with fellow council members and national administrators to improve programs, ensuring they are accessible, impactful, and resonate with students. I’ve authored a blog guiding the creation of new SADD chapters, led national conferences with 250+ attendees, and mentored SLC members in producing a national podcast series. I also implemented a recognition system that motivates over 10,000 chapters nationwide and have been invited to speak on the Power of Young People Podcast and national TV to promote teen driver safety. This role has allowed me to combine leadership, strategy, and collaboration while making a tangible impact on youth across the country and empowering students to make safer, more informed choices."],
         links: [
         { label: "Represented SADD National SLC as a Panelist", url: "/saddnation/SADDNationalSLCPanelist.png" },
-       // { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+        { label: "Media Link : WBKO News Interview -Teen Driving Awareness", url: "https://www.wbko.com/2025/10/21/kentucky-leads-nation-teen-driving-deaths-fourth-consecutive-year/", type: "external" },
+        { label: "Media Link : MSN News Interview   -Teen Driving Awareness",url: "https://www.msn.com/en-us/news/other/parents-should-be-very-involved-car-crashes-leading-cause-of-teen-deaths-tennessee-health-department-says/ar-AA1OTFft",type: "external" },
         { label: "Video - SADD National Leadership Summit in Georgia, Atlanta 2025 ", url: "/saddnation/saddnation.mp4", type: "video" , videotype: "other" }
           ],
     image: "/saddnation/nyc.png"
