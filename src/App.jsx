@@ -15,7 +15,7 @@ const sections = {
   Home,
   'Education': Education,
   'Research & Clinical Exposure': Research,
-  'Extracurriculars': Extracurricular,
+  'Leadership & Extracurriculars': Extracurricular,
   'Volunteer': Volunteer,
   'Awards & Certifications': Awards,
   'Contact': Contact

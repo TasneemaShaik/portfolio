@@ -1,4 +1,4 @@
-export const NAV_ITEMS = ['Home','Education','Research & Clinical Exposure','Extracurriculars','Volunteer','Awards & Certifications','Contact']
+export const NAV_ITEMS = ['Home','Education','Research & Clinical Exposure','Leadership & Extracurriculars','Volunteer','Awards & Certifications','Contact']
 
 export const SITE = {
     owner: 'Tasneema Shaik',
