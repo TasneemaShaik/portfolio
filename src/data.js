@@ -1,4 +1,4 @@
-export const NAV_ITEMS = ['Home','Education','Research','Extracurriculars','Volunteer','Awards & Certifications','Contact']
+export const NAV_ITEMS = ['Home','Education','Research & Clinical Exposure','Extracurriculars','Volunteer','Awards & Certifications','Contact']
 
 export const SITE = {
     owner: 'Tasneema Shaik',
@@ -62,6 +62,34 @@ export const EDUCATION = [
 ]
 
 export const RESEARCH = [
+    {
+    title: "Physician Shadowing ",
+    duration: "July 2025 - Present",
+    organization: "UH Rainbow Babies & Children’s Hospital; Cleveland Clinic; Cleveland Ibn Sina Clinic",
+    role: "Observer & Volunteer",
+    details: [
+"Actively engaged in ongoing shadowing experiences across Pediatrics, OBGYN, Cardiology, and Endocrinology. Gaining firsthand exposure to patient care and clinical decision-making under the mentorship of Dr. Sarah Ronis, Dr. Qarab Syed, Dr. Maria Shaker, Dr. Mehr Khan, and others. Continuously developing critical skills in empathy, active listening, and patient interaction by observing how physicians tailor their communication to meet the needs of patients across diverse ages and medical conditions."],
+      links: [
+       // { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+       // { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+     //   { label: "My Poster Presentation - 2025", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
+    ],
+   // image: "/research/rise/rise.jpg"
+  },
+    {
+    title: "Community-Engaged Cancer Research Program (CECRP)",
+    duration: "Nov 2025 - Present",
+    organization: "Case Western Reserve University",
+    role: "Intern",
+    details: [
+"I was honored to be selected for the Community-Engaged Cancer Research Program (CECRP), a competitive program for students passionate about science and community impact. Through CECRP, I am part of a cohort of emerging researchers working to connect biology, epidemiology, and population health with real-world cancer prevention and control.This program is helping me build skills in community-engaged research, including understanding ethical and historical considerations in human subjects research, applying quantitative and qualitative methods to problem-based studies, and exploring ways to translate and share research findings so they benefit the community."],
+      links: [
+       // { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+       // { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+      //  { label: "My Poster Presentation - 2025", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
+    ],
+  //  image: "/research/rise/rise.jpg"
+  },
   {
     title: "Research Intensive Summer Experience (RISE) Program",
     duration: "June 2025 - July 2025",
@@ -75,6 +103,20 @@ export const RESEARCH = [
         { label: "My Poster Presentation - 2025", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
     ],
     image: "/research/rise/rise.jpg"
+  },
+    {
+    title: "Robbins Bridge Program – Cardiovascular Inquiry Seminar Series ( CISS):",
+    duration: "Feb 2025 - Mar 2025",
+    organization: "Case Western Reserve University",
+    role: "Student",
+    details: [
+"From February to March 2025, I participated in the Robbins Bridge Program – Cardiovascular Inquiry Seminar Series (CISS) at Case Western Reserve University. This program provided hands-on exposure to cardiovascular medicine and medical school experiences. I gained practical skills in cardiac anatomy, hypertension, and coronary heart disease prevention, while learning to conduct patient interviews and perform physical examination techniques. I also explored interventional cardiovascular technologies and developed clinical reasoning through problem-solving exercises. The program included medical school-style seminars, small group discussions, and immersive activities, allowing me to engage deeply with medical concepts and experience the day-to-day environment of a medical student. Overall, this experience significantly strengthened my understanding of cardiovascular health and enhanced my skills in patient care and clinical practice."],
+    links: [
+       // { label: "Certificate", url: "/certificates/Awards/ap-awards.pdf" },
+       // { label: "Event Photo", url: "/certificates/Awards/ap-awards.pdf" },
+        //{ label: "My Poster Presentation - 2025", url: "/research/rise/risevideo.mp4", type: "video" , videotype: "other" }
+    ],
+    //image: "/research/rise/rise.jpg"
   },
   {
     title: "Scientific Enrichment Opportunity (SEO)/Youth Engaged in Science (YES) Program",
@@ -128,9 +170,12 @@ export const EXTRACURRICULARS = [
         { label: "Represented SADD National SLC as a Panelist", url: "/saddnation/SADDNationalSLCPanelist.png" },
         { label: "Media Link : WBKO News Interview -Teen Driving Awareness", url: "https://www.wbko.com/2025/10/21/kentucky-leads-nation-teen-driving-deaths-fourth-consecutive-year/", type: "external" },
         { label: "Media Link : MSN News Interview   -Teen Driving Awareness",url: "https://www.msn.com/en-us/news/other/parents-should-be-very-involved-car-crashes-leading-cause-of-teen-deaths-tennessee-health-department-says/ar-AA1OTFft",type: "external" },
-        { label: "Video - SADD National Leadership Summit in Georgia, Atlanta 2025 ", url: "/saddnation/saddnation.mp4", type: "video" , videotype: "other" }
+        { label: "Video - SADD National Leadership Summit in Georgia, Atlanta 2025 ", url: "/saddnation/saddnation.mp4", type: "video" , videotype: "other" },
+        { label: "Podcast - Driven to Lead: Youth Advocating for Safer Roads", url: "https://creators.spotify.com/pod/profile/nylcorg/episodes/Driven-to-Lead-Youth-Advocating-for-Safer-Roads-e2vkvso/a-abqfp67", type: "external" }
+
           ],
-    image: "/saddnation/nyc.png"
+    image: "/saddnation/nyc.png",
+    imageLabel: "SADD National Leadership Council members"
   },
   {
     title: "SADD Chapter at the Cleveland School of Science and Medicine (CSSM)",
@@ -140,14 +185,25 @@ export const EXTRACURRICULARS = [
     details: [
       
     "As a SADD Chapter Leader, I had the opportunity to grow our chapter from the ground up, recruiting 35 members, expanding to two additional schools, and building partnerships with seven local prevention organizations, including hospitals. I created public health style outreach campaigns and managed social media platforms that reached over 1,000 students, while raising $2,000 by winning a national video challenge on alcohol awareness and using the funds to expand our programs and outreach. Sharing our initiatives at statewide and national SADD events allowed me to connect with other student leaders and showcase our work, and I was honored to receive the President’s Volunteer Service Award for my dedication to teen wellness. Through planning schoolwide projects such as the Distract-O-Trac Project and Red Ribbon Week, I developed strong leadership, event coordination, and networking skills, while inspiring meaningful engagement and positive change in my school community."],
-    links: [
-        { label: "Neighborhood Networking Event", url: "/sadd/sadd2.png" },
-        { label: "Impaired Driving Awareness Session", url: "/sadd/sadd3.png" },
-        { label: "Ford Driver Safety Event", url: "/sadd/sadd3.1.png" },
-        { url: "/sadd/sadd1.mp4", type: "video" , videotype: "other" ,label: "SADD CSSM Chapter Raising Awareness for Distracted Driving "},
-    //    { label: "SADD CSSM NIAAA Video Award ", url: "https://www.youtube.com/watch?v=qImT4i7jX5Y", type: "video" , videotype: "youtube" }
-    ],
-    image: "/sadd/sadd1.png"
+ links: [
+  {
+    url: "https://youtu.be/qImT4i7jX5Y",
+    type: "video",
+    videotype: "youtube",
+    label: "SADD CSSM NIAAA Video Award"
+  },
+  {
+    url: "/sadd/sadd1.mp4",
+    type: "video",
+    videotype: "other",
+    label: "SADD CSSM Chapter Raising Awareness for Distracted Driving"
+  },
+  { label: "Neighborhood Networking Event", url: "/sadd/sadd2.png" },
+  { label: "Impaired Driving Awareness Session", url: "/sadd/sadd3.png" },
+  { label: "Ford Driver Safety Event", url: "/sadd/sadd3.1.png" }
+],
+    image: "/sadd/sadd1.png",
+    imageLabel: "Neighborhood Networking Event @ CSSM"
     
   },
   {
@@ -161,7 +217,8 @@ export const EXTRACURRICULARS = [
     links: [
        // { label: "My Journey with SADD", url: "https://www.youtube.com/embed/AbhYmUGBqTY", type: "video", videotype: "youtube" }
     ],
-    image: "/h3p/blooddrivecamp.png"
+    image: "/h3p/blooddrivecamp.png",
+    imageLabel: "H3P Blood Drive @ CSSM"
   },
   {
     title: "Beyond Bars Initiative (BBI)",
@@ -176,7 +233,8 @@ export const EXTRACURRICULARS = [
           { label: "YAC Criminal Justice Reform White Paper", url: "/bbi/WhitePaper.pdf" },
         { label: "OH-11 Youth Advisory Council Capstone Presentation", url: "/bbi/Capstone Presentation.mp4", type: "video" , videotype: "other" }
     ],
-    image: "/bbi/bbi.png"
+    image: "/bbi/bbi.png",
+    imageLabel: "Founders - BeyondBars Initiative"
     
   },
   {
@@ -197,7 +255,8 @@ export const EXTRACURRICULARS = [
     details: [
      "Since February 2024, I have served on University Hospitals’ Youth Advisory Council (KIDS Rainbow), where I review surveys completed by teens and provide feedback to doctors and hospital leaders to improve pediatric mental health services and patient communication. I work alongside healthcare administrators to create youth-focused initiatives, such as financial literacy programs, and help increase engagement with local communities. This experience has strengthened my skills in healthcare advocacy, communication, and program development, while giving me the opportunity to make a meaningful impact on the health and well-being of young people."
     ],
-    image: "/uh/KIDSRainbow.png"
+    image: "/uh/KIDSRainbow.png",
+    //imageLabel: "SADD National Leadership Council members"
   },
   {
     title: "Student Council",
@@ -216,7 +275,8 @@ export const EXTRACURRICULARS = [
     details: [
      "I am an active member of my high school’s Mock Trial team, where I have prepared and presented prosecution arguments for the 2024 and 2025 Ohio Mock Trial State Competitions. My responsibilities include conducting in-depth legal research, analyzing evidence, and crafting persuasive arguments while collaborating with teammates to develop cohesive case strategies. In 2024, I received the Outstanding Attorney Award at the Cuyahoga County Court House for my ability to articulate complex legal reasoning and advocate effectively in the courtroom. Participating in Mock Trial has strengthened my public speaking, logical reasoning, teamwork, and evidence-based argumentation skills, while providing firsthand experience with courtroom procedures and fostering a deeper appreciation for advocacy and justice."
     ],
-    image: "/certificates/Awards/mocktrail.png"
+    image: "/certificates/Awards/mocktrail.png",
+    imageLabel: "Receiving Outstanding Attorney Award"
   }
 ];
 
@@ -284,18 +344,12 @@ export const AWARDS = {
             date: "May 2025",
             link: "/certificates/Awards/harvard-book-prize.pdf",
         },
-        {
-            title: "Global Seal of Biliteracy in Latin",
-            date: "May 2025",
-             
-        },
-
         //{
          //   title: "Mary Nazimek Award for Research Excellence – New Nereus Commentary",
          //   date: "Jan 2024",
         //    link: "/certificates/mary-nazimek.pdf",
         //},
-                  {        title: "Mark Smith Prize for Outstanding Scientific Presentation",
+        {        title: "Mark Smith Prize for Outstanding Scientific Presentation",
             date: "July 2023",
             link: "/certificates/Awards/MarkSmith.pdf",
         },
@@ -303,16 +357,6 @@ export const AWARDS = {
             title: "Striving for Excellence Award",
             date: "May 2023",
             link: "/certificates/Awards/excellence.pdf",
-        },
-        {
-            title: "Excellence Award in Math, Science, Social Studies, Language Arts, Computer Science",
-            date: "May 2023",
-          //  link: "/certificates/multiple-excellence.pdf",
-        },
-        {
-            title: "Principal’s List Award & Lead by Example Award",
-            date: "April 2023",
-          //  link: "/certificates/principals-list.pdf",
         },
         {
             title: "IBM Quantum Computing Course : Certificate of Completion",
@@ -324,19 +368,20 @@ export const AWARDS = {
             date: "Jan 2023",
             link: "/certificates/Awards/NWEA.pdf",
         },
-    ],
-
-    SPORTS: [
-        {
-            title: "Martial Art Taekwondo – Blackbelt",
-            date: "Sept 2023",
-            link: "/certificates/Awards/blackbelt.pdf",
+                {
+            title: "Excellence Award in Math, Science, Social Studies, Language Arts, Computer Science",
+            date: "May 2023",
+          //  link: "/certificates/multiple-excellence.pdf",
         },
         {
-            title: "USATT Women’s Finalist – Ohio State Championship",
-            date: "Aug 2022 - Present",
-            link: "/certificates/Awards/columbus.jpg",
-            details: ["U1200", "U1300", "U1400"],
+            title: "Principal’s List Award & Lead by Example Award",
+            date: "April 2023",
+          //  link: "/certificates/principals-list.pdf",
+        },
+        {
+            title: "Global Seal of Biliteracy in Latin",
+            date: "May 2025",
+             
         },
     ],
 
@@ -397,6 +442,19 @@ export const AWARDS = {
             title: "Entire Holy Quran Memorization & Certification",
             date: "May 2022 - Present",
             link: "/certificates/Awards/quran.jpg",
+        },
+    ],
+      SPORTS: [
+        {
+            title: "Martial Art Taekwondo – Blackbelt",
+            date: "Sept 2023",
+            link: "/certificates/Awards/blackbelt.pdf",
+        },
+        {
+            title: "USATT Women’s Finalist – Ohio State Championship",
+            date: "Aug 2022 - Present",
+            link: "/certificates/Awards/columbus.jpg",
+            details: ["U1200", "U1300", "U1400"],
         },
     ],
 };

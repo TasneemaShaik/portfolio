@@ -2,92 +2,121 @@
 import { FaBolt, FaLink } from "react-icons/fa";
 
 export default function ExtracurricularCard({ item, index }) {
-  const hasVideo = item.links?.some(link => link.type === "video");
-  const videoLink = item.links?.find(link => link.type === "video");
-  const hasImage = !!item.image;
+  // Render the main details as a list
+  const renderDetails = () =>
+    item.details?.length > 0 && (
+      <ul className="space-y-3 text-gray-700">
+        {item.details.map((d, i) => (
+          <li key={i} className="flex items-start gap-2">
+            <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />
+            <span>{d}</span>
+          </li>
+        ))}
+      </ul>
+    );
 
-  const renderDetails = () => (
-    <ul className="space-y-3 text-gray-700">
-      {item.details.map((d, i) => (
-        <li key={i} className="flex items-start gap-2">
-          <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />
-          <span>{d}</span>
-        </li>
-      ))}
-    </ul>
-  );
+  // Render related links (non-video only)
+  const renderLinks = () => {
+    const nonVideoLinks = item.links?.filter(link => link.type !== "video");
+    if (!nonVideoLinks || nonVideoLinks.length === 0) return null;
 
-  const renderLinks = () =>
-    item.links?.length > 0 && (
+    return (
       <div className="mt-4 border-t border-gray-300 pt-3">
         <h4 className="text-md font-semibold text-gray-800 flex items-center gap-2">
           <FaLink className="text-blue-500" /> Related Links
         </h4>
         <ul className="mt-2 space-y-2">
-          {item.links.map((link, i) => (
+          {nonVideoLinks.map((link, i) => (
             <li key={i}>
-              {link.type === "video" ? (
-                <span className="text-gray-600 text-sm">{link.label}</span>
-              ) : (
-                <a
-                  href={link.type === "external" ? link.url : `${import.meta.env.BASE_URL}${link.url}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline hover:text-blue-800"
-                >
-                  {link.label}
-                </a>
-              )}
+              <a
+                href={link.type === "external" ? link.url : `${import.meta.env.BASE_URL}${link.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline hover:text-blue-800"
+              >
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
       </div>
     );
+  };
 
+  // Render all media (videos + images) with captions
   const renderMedia = () => {
-    if (!hasImage && !hasVideo) return null;
+    const mediaItems = [];
+
+    // Add videos first
+    (item.links || []).forEach(link => {
+      if (link.type === "video") mediaItems.push(link);
+    });
+
+    // Add image if it exists
+    if (item.image) {
+      mediaItems.push({
+        type: "image",
+        url: item.image,
+        label: item.imageLabel || item.title || "Image",
+      });
+    }
+
+    if (mediaItems.length === 0) return null;
 
     return (
-      <div className="mt-6 flex flex-col md:flex-row items-stretch gap-6">
-        {hasVideo && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="w-full md:w-1/2 rounded-xl overflow-hidden h-full"
-          >
-            {videoLink.videotype === "youtube" ? (
-              <iframe
-                src={videoLink.url}
-                title={videoLink.label}
-                allowFullScreen
-                className="w-full h-full object-contain rounded-xl"
-                style={{ border: "none" }}
-              />
-            ) : (
-              <video
-                src={`${import.meta.env.BASE_URL}${videoLink.url}`}
-                controls
-                className="w-full h-full object-contain rounded-xl"
-              />
-            )}
-          </motion.div>
-        )}
+      <div className="mt-6 flex flex-wrap justify-center gap-6">
+        {mediaItems.map((media, i) => {
+          const isVideo = media.type === "video";
+          const label = media.label || media.title || "";
 
-        {hasImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="w-full md:w-1/2 rounded-xl overflow-hidden h-full"
-          >
-            <img
-              src={`${import.meta.env.BASE_URL}${item.image}`}
-              alt={item.title}
-              className="w-full h-full object-contain rounded-xl"
-            />
-          </motion.div>
-        )}
+          return (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center"
+            >
+              {isVideo ? (
+                media.videotype === "youtube" ? (
+                  <iframe
+                    src={
+                      media.url.includes("embed")
+                        ? media.url
+                        : media.url.replace("youtu.be/", "www.youtube.com/embed/")
+                    }
+                    title={label}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-[300px] md:w-[400px] aspect-video rounded-xl"
+                    style={{ border: "none" }}
+                  />
+                ) : (
+                  <div className="w-[300px] md:w-[400px] aspect-video overflow-hidden rounded-xl">
+                    <video
+                      src={`${import.meta.env.BASE_URL}${media.url}`}
+                      controls
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )
+              ) : (
+                <img
+                  src={`${import.meta.env.BASE_URL}${media.url}`}
+                  alt={label}
+                  className="w-[300px] md:w-[400px] max-w-full object-contain rounded-xl"
+                />
+              )}
+
+              {/* Caption under media */}
+              {label && (
+                <p className="mt-2 text-sm text-gray-700 font-medium text-center">
+                  {label}
+                </p>
+              )}
+            </motion.div>
+          );
+        })}
       </div>
     );
   };

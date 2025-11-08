@@ -14,7 +14,7 @@ import { NAV_ITEMS } from './data.js';
 const sections = {
   Home,
   'Education': Education,
-  'Research': Research,
+  'Research & Clinical Exposure': Research,
   'Extracurriculars': Extracurricular,
   'Volunteer': Volunteer,
   'Awards & Certifications': Awards,

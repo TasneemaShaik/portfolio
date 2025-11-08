@@ -2,107 +2,116 @@
 import { FaBolt, FaLink } from "react-icons/fa";
 
 export default function VolunteerCard({ item, index }) {
-  const hasVideo = item.links?.some(link => link.type === "video");
-  const videoLink = item.links?.find(link => link.type === "video");
-  const hasImage = !!item.image;
+  // Render main details
+  const renderDetails = () =>
+    item.details?.length > 0 && (
+      <ul className="space-y-3 text-gray-700">
+        {item.details.map((d, i) => (
+          <li key={i} className="flex items-start gap-2">
+            <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />
+            <span>{d}</span>
+          </li>
+        ))}
+      </ul>
+    );
 
-  const renderDetails = () => (
-    <ul className="space-y-3 text-gray-700">
-      {item.details.map((d, i) => (
-        <li key={i} className="flex items-start gap-2">
-          <FaBolt className="text-orange-500 mt-1 flex-shrink-0" />
-          <span>{d}</span>
-        </li>
-      ))}
-    </ul>
-  );
+  // Render related links (non-video)
+  const renderLinks = () => {
+    const nonVideoLinks = item.links?.filter(link => link.type !== "video" && link.type !== "podcast");
+    if (!nonVideoLinks || nonVideoLinks.length === 0) return null;
 
-  const renderLinks = () =>
-    item.links?.length > 0 && (
+    return (
       <div className="mt-4 border-t border-gray-300 pt-3">
         <h4 className="text-md font-semibold text-gray-800 flex items-center gap-2">
           <FaLink className="text-blue-500" /> Related Links
         </h4>
         <ul className="mt-2 space-y-2">
-          {item.links.map((link, i) => (
+          {nonVideoLinks.map((link, i) => (
             <li key={i}>
-              {link.type === "video" ? (
-                <span className="text-gray-600 text-sm">{link.label}</span>
-              ) : (
-                <a
-                  href={`${import.meta.env.BASE_URL}${link.url}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline hover:text-blue-800"
-                >
-                  {link.label}
-                </a>
-              )}
+              <a
+                href={link.type === "external" ? link.url : `${import.meta.env.BASE_URL}${link.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline hover:text-blue-800"
+              >
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
       </div>
     );
+  };
 
-  const MediaItem = ({ src, isVideo, type }) => (
-    <div className="w-full md:w-1/2 rounded-xl overflow-hidden h-full">
-      {isVideo ? (
-        type === "youtube" ? (
-          <iframe
-            src={src}
-            title={videoLink.label}
-            allowFullScreen
-            className="w-full h-full object-contain rounded-xl"
-            style={{ border: "none" }}
-          />
-        ) : (
-          <video
-            src={`${import.meta.env.BASE_URL}${src}`}
-            controls
-            className="w-full h-full object-contain rounded-xl"
-          />
-        )
-      ) : (
-        <img
-          src={`${import.meta.env.BASE_URL}${src}`}
-          alt={item.title}
-          className="w-full h-full object-contain rounded-xl"
-        />
-      )}
+  // Render media (videos, podcasts, images) with captions
+// Render media (videos, podcasts, images) with captions
+const renderMedia = () => {
+  const mediaItems = [];
+
+  // Add videos/podcasts first
+  (item.links || []).forEach(link => {
+    if (link.type === "video" || link.type === "podcast") mediaItems.push(link);
+  });
+
+  // Add image
+  if (item.image) {
+    mediaItems.push({
+      type: "image",
+      url: item.image,
+      label: item.imageLabel || item.title || "Image",
+    });
+  }
+
+  if (mediaItems.length === 0) return null;
+
+  return (
+    <div className="mt-6 flex flex-wrap justify-center gap-6">
+      {mediaItems.map((media, i) => {
+        const label = media.label || media.title || "";
+
+        return (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col items-center"
+          >
+            {media.type === "image" ? (
+              <img
+                src={`${import.meta.env.BASE_URL}${media.url}`}
+                alt={label}
+                className="w-[300px] md:w-[400px] max-w-full object-contain rounded-xl"
+              />
+            ) : media.type === "podcast" ? (
+              <iframe
+                src={media.url}
+                title={label}
+                allow="autoplay; encrypted-media"
+                className="w-[300px] md:w-[400px] h-64 md:h-72 rounded-xl"
+                style={{ border: "none" }}
+              />
+            ) : (
+              <video
+                src={`${import.meta.env.BASE_URL}${media.url}`}
+                controls
+                className="w-[300px] md:w-[400px] aspect-video rounded-xl object-contain"
+              />
+            )}
+
+            {/* Caption under media */}
+            {label && (
+              <p className="mt-2 text-sm text-gray-700 font-medium text-center">
+                {label}
+              </p>
+            )}
+          </motion.div>
+        );
+      })}
     </div>
   );
+};
 
-  const renderMediaLayout = () => {
-    if (!hasVideo && !hasImage) return null;
-
-    // Only Image
-    if (!hasVideo && hasImage)
-      return (
-        <div className="mt-6 flex flex-col md:flex-row gap-6 items-center">
-          {renderDetails()}
-          <MediaItem src={item.image} isVideo={false} />
-        </div>
-      );
-
-    // Only Video
-    if (hasVideo && !hasImage)
-      return (
-        <div className="mt-6 flex justify-start gap-6">
-          {renderDetails()}
-          <MediaItem src={videoLink.url} isVideo={true} type={videoLink.videotype} />
-        </div>
-      );
-
-    // Video + Image
-    if (hasVideo && hasImage)
-      return (
-        <div className="mt-6 flex flex-col md:flex-row gap-6 items-center">
-          {renderDetails()}
-          <MediaItem src={videoLink.url} isVideo={true} type={videoLink.videotype} />
-          <MediaItem src={item.image} isVideo={false} />
-        </div>
-      );
-  };
 
   return (
     <motion.div
@@ -120,14 +129,17 @@ export default function VolunteerCard({ item, index }) {
         </div>
         <div className="text-right">
           <span className="block text-sm md:text-base text-gray-700">{item.duration}</span>
-          {item.organization && <h5 className="text-md font-normal text-gray-700 mt-1">{item.organization}</h5>}
+          {item.organization && (
+            <h5 className="text-md font-normal text-gray-700 mt-1">{item.organization}</h5>
+          )}
         </div>
       </div>
 
       {/* Body */}
       <div className="p-6 bg-[#d8e4ed]">
+        {renderDetails()}
         {renderLinks()}
-        {renderMediaLayout()}
+        {renderMedia()}
       </div>
     </motion.div>
   );
